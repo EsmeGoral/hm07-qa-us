@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
  config = require('../config'); 
 
-test('The status code of deleting the kit is 200', async () => {
+test('Status code should be 200 in Delete while using Postman', async () => {
 	let actualstatusCode;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
@@ -18,7 +18,7 @@ test('The status code of deleting the kit is 200', async () => {
 
 
 
-test('The response body should contain an ok true status', async () => {
+test('Response body should contain ok true status in Delete while using Postman', async () => {
 let actualresponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {

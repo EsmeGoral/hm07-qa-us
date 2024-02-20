@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const config = require('../config');
 
 let requestBody = {
@@ -9,7 +10,7 @@ let requestBody = {
   ]
 }
 
-test('Code should return 201 status in POST', async () => {
+test('Code should return 201 status in POST while using Postman', async () => {
 let actualstatusCode;
 
     try {
@@ -30,7 +31,9 @@ let actualstatusCode;
 
 
 
-test('Resonse body should contain the Courier service "order and go"', async () => {
+
+
+test('Resonse body should contain the Courier service "order and go" in POST while using Postman', async () => {
 let actualresponseBody;
 
     try {
@@ -47,3 +50,4 @@ let actualresponseBody;
 	}
         expect(actualresponseBody["courierService"]).toBe("Order and Go");
 });
+

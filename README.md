@@ -44,7 +44,7 @@ and add your body
 }
 
 
-Next we need to add prodcuts to kit,select POST insert serverlink/api/v1/kits/7/products
+Next we need to add prodcuts to kit,select POST insert serverlink/api/v1/kits/8/products
 {
     "productsList": [
         {
@@ -58,7 +58,7 @@ Next we need to add prodcuts to kit,select POST insert serverlink/api/v1/kits/7/
     ]
 }
 
-Lastley we need to do some changes so select PUT insert serverlink/api/v1/kits/7
+Lastley we need to do some changes so select PUT insert serverlink/api/v1/kits/8
 and then add your body.
 
 
@@ -71,7 +71,7 @@ and then add your body.
 
 
 
-Now for deleteHandlers.test.js we need to delete the kit so select Delete serverlink/api/v1/kits/7
+Now for deleteHandlers.test.js we need to delete the kit so select Delete serverlink/api/v1/kits/8
 the body is empty and should return 200 ok response OK:TRUE
 
 

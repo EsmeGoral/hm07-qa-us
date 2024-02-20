@@ -12,7 +12,7 @@ const requestBody = { "productsList": [
         }
     ]}
 
-test('Code should return 200 status in PUT', async () => {
+test('Code should return 200 status in PUT while using Postman', async () => {
 let actualstatusCode;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
@@ -41,7 +41,7 @@ let actualstatusCode;
         }
     ]};
 
-test('Response Body should contain Ok True', async () => {
+test('Response Body should contain Ok True in PUT while using Postman', async () => {
 let actualresponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
